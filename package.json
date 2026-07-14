@@ -2,7 +2,7 @@
   "name": "cfgvet",
   "version": "0.1.0",
   "description": "Doctor for .claude, .cursor and Copilot config directories — schema validation, exec bits, dangling references and cross-harness drift in one offline command.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
