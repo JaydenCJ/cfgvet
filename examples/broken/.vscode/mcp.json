@@ -1,0 +1,6 @@
+{
+  // shared team servers
+  "servers": {
+    "db": { "command": "npx", "args": ["-y", "db-mcp"] },
+  },
+}

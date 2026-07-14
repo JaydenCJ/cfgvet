@@ -1,0 +1,6 @@
+{
+  "mcpServers": {
+    "db": { "command": "npx", "args": ["-y", "db-mcp"] },
+    "docs": { "command": "./tools/docs-server.js" }
+  }
+}

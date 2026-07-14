@@ -1,0 +1,54 @@
+{
+  "name": "cfgvet",
+  "version": "0.1.0",
+  "description": "Doctor for .claude, .cursor and Copilot config directories — schema validation, exec bits, dangling references and cross-harness drift in one offline command.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "cfgvet": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "claude-code",
+    "cursor",
+    "copilot",
+    "agent-config",
+    "linter",
+    "hooks",
+    "mcp",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/cfgvet.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/cfgvet#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/cfgvet/issues"
+  }
+}

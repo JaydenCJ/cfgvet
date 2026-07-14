@@ -1,0 +1,7 @@
+---
+description: Conventions for the old services layer
+globs: services/**/*.go
+---
+Follow the service template:
+
+@templates/service-template.ts

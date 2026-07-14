@@ -1,0 +1,5 @@
+---
+description: TypeScript conventions
+globs: src/**/*.ts
+---
+Follow the conventions in CLAUDE.md. Prefer readonly types.

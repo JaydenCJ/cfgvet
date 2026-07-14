@@ -1,0 +1,25 @@
+{
+  "permisions": {
+    "allow": ["Bash(npm run test:*)"]
+  },
+  "env": {
+    "APP_ENV": "dev"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command", "command": ".claude/hooks/format.sh" }
+        ]
+      }
+    ],
+    "postToolUse": [
+      {
+        "hooks": [
+          { "type": "command", "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/lint.sh" }
+        ]
+      }
+    ]
+  }
+}

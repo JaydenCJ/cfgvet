@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": ["Bash(npm run test:*)"],
+    "deny": ["WebFetch"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command", "command": ".claude/hooks/format.sh" }
+        ]
+      }
+    ]
+  }
+}
